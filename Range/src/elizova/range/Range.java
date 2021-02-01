@@ -37,7 +37,7 @@ public class Range {
         return number >= from && number <= to;
     }
 
-    public String getIntersectionRange(double from, double to) {
+    public Range getIntersectionRange(double from, double to) {
         for (int i = (int) from; i <= getLength(); i++) {
             if (isInside(i) && i <= to) {
                 from = i;
@@ -45,7 +45,7 @@ public class Range {
                 for (int j = (int) to; j >= i; j--) {
                     if (isInside(j)) {
                         to = j;
-                        return "Интервал-пересечения с " + from + " до " + to;
+                        return new Range(from, to);
                     }
                 }
             }
@@ -54,12 +54,21 @@ public class Range {
         return null;
     }
 
-    public String getUnion(double from, double to) {
+    public void print(Range[] rangesArray) {
+        for (Range e : rangesArray) {
+            e.print();
+        }
+    }
+
+    public Range[] getUnion(double from, double to) {
         if (getIntersectionRange(from, to) == null) {
+            Range range1 = new Range(this.from, this.to);
+            Range range2 = new Range(from, to);
+
             if (this.from > from) {
-                return "Диапазон объединения с " + from + " до " + to + " и с " + this.from + " до " + this.to;
+                return new Range[]{range2, range1};
             } else {
-                return "Диапазон объединения с " + this.from + " до " + this.to + " и с " + from + " до " + to;
+                return new Range[]{range1, range2};
             }
         }
 
@@ -71,20 +80,22 @@ public class Range {
             end = this.to;
         }
 
-        return "Диапазон объединения с " + start + " до " + end;
+        return new Range[]{new Range(start, end)};
     }
 
-    /*
-    public String getDifference(double from, double to) {
-        if (this.from == from && this.to == to) {
-            return "Разность = 0";
+    public Range[] getDifference(double from, double to) {
+        if ((this.from == from && this.to == to)) {
+            return new Range[]{new Range(0, 0)};
         }
 
-        if (this.from != from && this.to != to){
-            //код
+        if (from <= this.from) {
+            from = to + 1;
+            to = this.to;
+        } else {
+            to = from;
+            from = this.from;
         }
 
-        //код для 3 случая
+        return new Range[]{new Range(from, to)};
     }
-    */
 }
