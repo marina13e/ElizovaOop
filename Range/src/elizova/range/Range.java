@@ -89,35 +89,25 @@ public class Range {
     }
 
     public Range[] getDifference(double from, double to) {
-        if ((this.from == from && this.to <= to)) {
+        if (from <= this.from && to >= this.to) {
             return null;
         }
 
-        Range range2 = new Range(0, 0);
+        double end = from;
+        double start = this.from;
+        Range range1 = new Range(start, end);
 
-        if (from <= this.from) {
-            if (to <= this.to) {
-                from = to + 1;
-                to = this.to;
-            }
-        } else {
-            to = from;
-            from = this.from;
-
-            if (to < this.to) {
-                for (int i = 0; i <= getLength(); i++) {
-                    double start = this.from + i;
-
-                    if (to == start) {
-                        range2.setFrom(start);
-                        range2.setTo(this.to);
-                        break;
-                    }
-                }
-            }
+        if (from > this.from) {
+            return new Range[]{range1};
         }
 
-        Range range1 = new Range(from, to);
+        from = to + 1;
+        to = this.to;
+        Range range2 = new Range(from, to);
+
+        if (to < this.to) {
+            return new Range[]{range2};
+        }
 
         return new Range[]{range1, range2};
     }

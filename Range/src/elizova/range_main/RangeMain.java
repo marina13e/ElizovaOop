@@ -40,9 +40,12 @@ public class RangeMain {
 
         Range intersection = range1.getIntersectionRange(from2, to2);
         System.out.println("Результат поиска пересечения: ");
-        intersection.print();
-
-        System.out.println();
+        if (intersection == null) {
+            System.out.println("Значение отсутствует");
+        } else {
+            intersection.print();
+            System.out.println();
+        }
 
         Range[] union = range1.getUnion(from2, to2);
         System.out.println("Результат объединения: ");

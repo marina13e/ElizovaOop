@@ -22,6 +22,7 @@
     <list default="true" id="115fd861-99ee-47fe-bc3e-5306255b8256" name="Default Changelist" comment="Update Range, update RangeMain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612207676825</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Range, update RangeMain">
+      <created>1612232750118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612232750118</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,41 +121,55 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update Range, update RangeMain" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1612232420411">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1612232420411">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1612232420411">
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1612232420411">
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1612207718955">
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1612207718955">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1612207718955">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1612207718955">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1612285076390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612207697502">
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612285076390" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612232763193">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612207697502" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612232763193" />
+    <state x="228" y="98" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1612284764838">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="228" y="98" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1612284764838" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
