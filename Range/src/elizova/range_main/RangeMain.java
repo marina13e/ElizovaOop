@@ -16,6 +16,7 @@ public class RangeMain {
 
         range1.setFrom(1.0);
         range1.setTo(5.0);
+
         System.out.printf("Значения from и to были изменены%nДиапазон начинается со значения %f%n" +
                 "Диапазон кончается значением %f%n", range1.getFrom(), range1.getTo());
 
@@ -40,6 +41,7 @@ public class RangeMain {
 
         Range intersection = range1.getIntersectionRange(from2, to2);
         System.out.println("Результат поиска пересечения: ");
+
         if (intersection == null) {
             System.out.println("Значение отсутствует");
         } else {
