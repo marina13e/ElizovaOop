@@ -55,8 +55,13 @@ public class Range {
     }
 
     public void print(Range[] rangesArray) {
-        for (Range e : rangesArray) {
-            e.print();
+        if (rangesArray == null) {
+            System.out.println("Значение отсутствует");
+        } else {
+            for (Range e : rangesArray) {
+                e.print();
+                System.out.println();
+            }
         }
     }
 
@@ -84,18 +89,36 @@ public class Range {
     }
 
     public Range[] getDifference(double from, double to) {
-        if ((this.from == from && this.to == to)) {
-            return new Range[]{new Range(0, 0)};
+        if ((this.from == from && this.to <= to)) {
+            return null;
         }
 
+        Range range2 = new Range(0, 0);
+
         if (from <= this.from) {
-            from = to + 1;
-            to = this.to;
+            if (to <= this.to) {
+                from = to + 1;
+                to = this.to;
+            }
         } else {
             to = from;
             from = this.from;
+
+            if (to < this.to) {
+                for (int i = 0; i <= getLength(); i++) {
+                    double start = this.from + i;
+
+                    if (to == start) {
+                        range2.setFrom(start);
+                        range2.setTo(this.to);
+                        break;
+                    }
+                }
+            }
         }
 
-        return new Range[]{new Range(from, to)};
+        Range range1 = new Range(from, to);
+
+        return new Range[]{range1, range2};
     }
 }

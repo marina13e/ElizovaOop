@@ -35,20 +35,21 @@ public class RangeMain {
         double range1Length = range1.getLength();
         System.out.println("Длина диапазона = " + range1Length);
 
-        double from2 = 1.0;
+        double from2 = 3.0;
         double to2 = 8.0;
 
         Range intersection = range1.getIntersectionRange(from2, to2);
+        System.out.println("Результат поиска пересечения: ");
         intersection.print();
 
         System.out.println();
 
         Range[] union = range1.getUnion(from2, to2);
+        System.out.println("Результат объединения: ");
         range1.print(union);
 
-        System.out.println();
-
         Range[] difference = range1.getDifference(from2, to2);
+        System.out.println("Результат разницы: ");
         range1.print(difference);
     }
 }

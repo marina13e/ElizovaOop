@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115fd861-99ee-47fe-bc3e-5306255b8256" name="Default Changelist" comment="Add package range_main, update Range, update RangeMain">
+    <list default="true" id="115fd861-99ee-47fe-bc3e-5306255b8256" name="Default Changelist" comment="Update Range, update RangeMain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612200244881</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Range, update RangeMain">
+      <created>1612207676825</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612207676825</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,44 +109,45 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add project RangeMain, update Range" />
     <MESSAGE value="Add package range_main, update Range, update RangeMain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add package range_main, update Range, update RangeMain" />
+    <MESSAGE value="Update Range, update RangeMain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Range, update RangeMain" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1612207396750">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1612232420411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612207396750" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1612207396750">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1612232420411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612207396750" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1612207396749">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1612232420411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612207396749" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1612207396750">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1612232420411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612207396750" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1612196858848">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612232420411" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1612207718955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612196858848" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1612196858848">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1612207718955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612196858848" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1612196858848">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1612207718955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612196858848" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1612196858848">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1612207718955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612196858848" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612200295536">
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612207718955" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612207697502">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612200295536" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612207697502" />
   </component>
 </project>
