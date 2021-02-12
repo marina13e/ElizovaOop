@@ -17,12 +17,12 @@ public class Range {
         return from;
     }
 
-    public double getTo() {
-        return to;
-    }
-
     public void setFrom(double from) {
         this.from = from;
+    }
+
+    public double getTo() {
+        return to;
     }
 
     public void setTo(double to) {
@@ -30,82 +30,71 @@ public class Range {
     }
 
     public void print() {
-        System.out.printf("Диапазон с %f до %f", from, to);
+        System.out.printf("(%f, %f)", from, to);
     }
 
-    public boolean isInside(double number) {
-        return number >= from && number <= to;
-    }
+    public static void print(Range[] ranges, String function) {
+        System.out.printf("Результат %s: [", function);
 
-    public Range getIntersectionRange(double from, double to) {
-        for (int i = (int) from; i <= getLength(); i++) {
-            if (isInside(i) && i <= to) {
-                from = i;
-
-                for (int j = (int) to; j >= i; j--) {
-                    if (isInside(j)) {
-                        to = j;
-                        return new Range(from, to);
-                    }
-                }
-            }
-        }
-
-        return null;
-    }
-
-    public void print(Range[] rangesArray) {
-        if (rangesArray == null) {
-            System.out.println("Значение отсутствует");
-        } else {
-            for (Range e : rangesArray) {
+        if (ranges.length != 0) {
+            for (Range e : ranges) {
                 e.print();
-                System.out.println();
-            }
-        }
-    }
-
-    public Range[] getUnion(double from, double to) {
-        if (getIntersectionRange(from, to) == null) {
-            Range range1 = new Range(this.from, this.to);
-            Range range2 = new Range(from, to);
-
-            if (this.from > from) {
-                return new Range[]{range2, range1};
-            } else {
-                return new Range[]{range1, range2};
             }
         }
 
-        double start = this.from;
-        double end = to;
-
-        if (this.from > from) {
-            start = from;
-            end = this.to;
-        }
-
-        return new Range[]{new Range(start, end)};
+        System.out.println("]");
     }
 
-    public Range[] getDifference(double from, double to) {
-        if (from <= this.from && to >= this.to) {
+    public Range getIntersection(Range range) {
+        double from2 = range.getFrom();
+        double to2 = range.getTo();
+
+        if ((from > to2) || (to < from2)) {
             return null;
         }
 
-        double end = from;
-        double start = this.from;
-        Range range1 = new Range(start, end);
+        return new Range(Math.max(from, from2), Math.min(to, to2));
+    }
 
-        if (from > this.from) {
+    public Range[] getUnion(Range range) {
+        double from2 = range.getFrom();
+        double to2 = range.getTo();
+
+        if (getIntersection(range) == null) {
+            Range range1 = new Range(from, to);
+            Range range2 = new Range(from2, to2);
+
+            if (from > from2) {
+                return new Range[]{range2, range1};
+            }
+
+            return new Range[]{range1, range2};
+        }
+
+        return new Range[]{new Range(Math.min(from, from2), Math.max(to, to2))};
+    }
+
+    public Range[] getDifference(Range range) {
+        double from2 = range.getFrom();
+        double to2 = range.getTo();
+
+        if (from2 <= this.from && to2 >= this.to) {
+            return new Range[0];
+        }
+
+        double from1 = this.from;
+        double to1 = from2;
+        Range range1 = new Range(from1, to1);
+
+        if (to2 > this.to) {
             return new Range[]{range1};
         }
 
-        from = to + 1;
-        to = this.to;
-        Range range2 = new Range(from, to);
+        from2 = to2 + 1;
+        to2 = this.to;
+        Range range2 = new Range(from2, to2);
 
-        if (to < this.to) {
+        if (to2 < this.to) {
             return new Range[]{range2};
         }
 
