@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="115fd861-99ee-47fe-bc3e-5306255b8256" name="Default Changelist" comment="Update Range, update RangeMain">
-      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/SortByArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/SortByPerimeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Shapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes_main/ShapesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes_main/ShapesMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ShapesMain">
+  <component name="RunManager" selected="Application.RangeMain">
     <configuration name="RangeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="elizova.range_main.RangeMain" />
       <module name="Range" />
@@ -85,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShapesMain" />
         <item itemvalue="Application.RangeMain" />
+        <item itemvalue="Application.ShapesMain" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613145968288</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add classes Rectangle, Circle, Shape, ShapesMain, SortByArea, SortByPerimeter, Square, Triangle">
+      <created>1614367166179</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614367166179</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +176,8 @@
     <MESSAGE value="Update RangeMain" />
     <MESSAGE value="Add module Shapes, Add Shapes, Add ShapesMain" />
     <MESSAGE value="Update Range, update RangeMain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Range, update RangeMain" />
+    <MESSAGE value="Add classes Rectangle, Circle, Shape, ShapesMain, SortByArea, SortByPerimeter, Square, Triangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add classes Rectangle, Circle, Shape, ShapesMain, SortByArea, SortByPerimeter, Square, Triangle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1614355613547">
@@ -191,22 +192,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614345426721" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1614364373326">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1614371273006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614364373326" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1614364373326">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614371273006" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1614371273006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614364373326" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1614364373326">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614371273006" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1614371273005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614364373326" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1614364373326">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614371273005" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1614371273006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614364373326" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614371273006" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1614355425172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -223,10 +224,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1614355425172" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1613145980629">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1614367192628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1613145980629" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614367192628" />
     <state x="228" y="98" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1612284764838">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

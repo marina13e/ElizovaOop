@@ -29,8 +29,9 @@ public class Range {
         this.to = to;
     }
 
-    public void print() {
-        System.out.printf("(%f, %f)", from, to);
+    @Override
+    public String toString() {
+        return "(" + from + ", " + to + ")";
     }
 
     public static void print(Range[] ranges, String function) {
@@ -38,63 +39,58 @@ public class Range {
 
         if (ranges.length != 0) {
             for (Range e : ranges) {
-                e.print();
+                System.out.print(e.toString());
             }
         }
 
         System.out.println("]");
     }
 
-    public Range getIntersection(Range range) {
-        double from2 = range.getFrom();
-        double to2 = range.getTo();
+    public boolean isInside(double number) {
+        return number >= from && number <= to;
+    }
 
-        if ((from > to2) || (to < from2)) {
+    public Range getIntersection(Range range) {
+        if ((from >= range.to) || (to <= range.from)) {
             return null;
         }
 
-        return new Range(Math.max(from, from2), Math.min(to, to2));
+        return new Range(Math.max(from, range.from), Math.min(to, range.to));
     }
 
     public Range[] getUnion(Range range) {
-        double from2 = range.getFrom();
-        double to2 = range.getTo();
-
         if (getIntersection(range) == null) {
             Range range1 = new Range(from, to);
-            Range range2 = new Range(from2, to2);
+            Range range2 = new Range(range.from, range.to);
 
-            if (from > from2) {
+            if (from > range.from) {
                 return new Range[]{range2, range1};
             }
 
             return new Range[]{range1, range2};
         }
 
-        return new Range[]{new Range(Math.min(from, from2), Math.max(to, to2))};
+        return new Range[]{new Range(Math.min(from, range.from), Math.max(to, range.to))};
     }
 
     public Range[] getDifference(Range range) {
-        double from2 = range.getFrom();
-        double to2 = range.getTo();
-
-        if (from2 <= this.from && to2 >= this.to) {
+        if (range.from <= from && range.to >= to) {
             return new Range[0];
         }
 
-        double from1 = this.from;
-        double to1 = from2;
+        double from1 = from;
+        double to1 = range.from;
         Range range1 = new Range(from1, to1);
 
-        if (to2 > this.to) {
+        if (range.to > to) {
             return new Range[]{range1};
         }
 
-        from2 = to2 + 1;
-        to2 = this.to;
-        Range range2 = new Range(from2, to2);
+        range.from = range.to + 1;
+        range.to = to;
+        Range range2 = new Range(range.from, range.to);
 
-        if (to2 < this.to) {
+        if (range.to < to) {
             return new Range[]{range2};
         }
 

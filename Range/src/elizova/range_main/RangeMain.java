@@ -11,8 +11,7 @@ public class RangeMain {
 
         Range range1 = new Range(from1, to1);
 
-        range1.print();
-        System.out.println();
+        System.out.println(range1.toString());
 
         range1.setFrom(1.0);
         range1.setTo(6.0);
@@ -25,7 +24,7 @@ public class RangeMain {
         System.out.println("Введите число:");
         double number = scanner.nextDouble();
 
-        if (number >= range1.getFrom() && number <= range1.getTo()) {
+        if (range1.isInside(number)) {
             System.out.printf("Число %f входит в диапазон", number);
         } else {
             System.out.printf("Число %f не входит в диапазон", number);
@@ -47,8 +46,7 @@ public class RangeMain {
         if (intersection == null) {
             System.out.println("Значение отсутствует");
         } else {
-            intersection.print();
-            System.out.println();
+            System.out.println(intersection.toString());
         }
 
         Range[] union = range1.getUnion(range2);
