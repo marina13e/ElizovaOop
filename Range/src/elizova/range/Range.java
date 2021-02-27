@@ -34,16 +34,20 @@ public class Range {
         return "(" + from + ", " + to + ")";
     }
 
-    public static void print(Range[] ranges, String function) {
-        System.out.printf("Результат %s: [", function);
+    public static String getString(Range[] ranges) {
+        StringBuilder rangeArray = new StringBuilder();
 
-        if (ranges.length != 0) {
-            for (Range e : ranges) {
-                System.out.print(e.toString());
-            }
+        rangeArray.append("[");
+
+        for (int i = 0; i < ranges.length - 1; i++) {
+            rangeArray.append(ranges[i].toString())
+                    .append(", ");
         }
 
-        System.out.println("]");
+        rangeArray.append(ranges[ranges.length - 1].toString())
+                .append("]");
+
+        return rangeArray.toString();
     }
 
     public boolean isInside(double number) {
@@ -51,7 +55,7 @@ public class Range {
     }
 
     public Range getIntersection(Range range) {
-        if ((from >= range.to) || (to <= range.from)) {
+        if (from >= range.to || to <= range.from) {
             return null;
         }
 
@@ -59,7 +63,7 @@ public class Range {
     }
 
     public Range[] getUnion(Range range) {
-        if (getIntersection(range) == null) {
+        if (from >= range.to || to <= range.from) {
             Range range1 = new Range(from, to);
             Range range2 = new Range(range.from, range.to);
 
@@ -78,19 +82,15 @@ public class Range {
             return new Range[0];
         }
 
-        double from1 = from;
-        double to1 = range.from;
-        Range range1 = new Range(from1, to1);
+        Range range1 = new Range(from, range.from);
 
         if (range.to > to) {
             return new Range[]{range1};
         }
 
-        range.from = range.to + 1;
-        range.to = to;
-        Range range2 = new Range(range.from, range.to);
+        Range range2 = new Range(range.to, to);
 
-        if (range.to < to) {
+        if (from > range.from) {
             return new Range[]{range2};
         }
 

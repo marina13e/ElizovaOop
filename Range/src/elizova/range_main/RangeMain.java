@@ -14,7 +14,7 @@ public class RangeMain {
         System.out.println(range1.toString());
 
         range1.setFrom(1.0);
-        range1.setTo(6.0);
+        range1.setTo(8.0);
 
         System.out.printf("Значения from и to были изменены%nДиапазон начинается со значения %f%n" +
                 "Диапазон кончается значением %f%n", range1.getFrom(), range1.getTo());
@@ -36,7 +36,7 @@ public class RangeMain {
         System.out.println("Длина диапазона = " + range1Length);
 
         double from2 = 3.0;
-        double to2 = 4.0;
+        double to2 = 6.0;
 
         Range range2 = new Range(from2, to2);
 
@@ -50,9 +50,9 @@ public class RangeMain {
         }
 
         Range[] union = range1.getUnion(range2);
-        Range.print(union, "объединения");
+        System.out.println("Результат объединения = " + Range.getString(union));
 
         Range[] difference = range1.getDifference(range2);
-        Range.print(difference, "разницы");
+        System.out.println("Результат разницы = " + Range.getString(difference));
     }
 }
