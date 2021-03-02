@@ -67,29 +67,31 @@ public class Vector {
     }
 
     public Vector getSum(Vector vector) {
-        for (int i = 0; i < getSize(); i++) {
-            vector.vector[i] += this.vector[i];
+        int length = Math.min(getSize(), vector.getSize());
+
+        for (int i = 0; i < length; i++) {
+            this.vector[i] += vector.vector[i];
         }
 
-        return vector;
+        return this;
     }
 
     public Vector getDifferent(Vector vector) {
-        for (int i = 0; i < getSize(); i++) {
-            vector.vector[i] -= this.vector[i];
+        int length = Math.min(getSize(), vector.getSize());
+
+        for (int i = 0; i < length; i++) {
+            this.vector[i] -= vector.vector[i];
         }
 
-        return vector;
+        return this;
     }
 
     public Vector getMultiplicationResult(int scalar) {
-        Vector multiplicationResult = new Vector(vector);
-
         for (int i = 0; i < getSize(); i++) {
-            multiplicationResult.vector[i] *= scalar;
+            vector[i] *= scalar;
         }
 
-        return multiplicationResult;
+        return this;
     }
 
     public Vector unfoldVector() {
@@ -149,8 +151,9 @@ public class Vector {
 
     public static Vector getSum(Vector vector1, Vector vector2) {
         Vector vectorSumResult = new Vector(Math.max(vector1.n, vector2.n), vector1.vector);
+        int length = Math.max(vector1.n, vector2.n);
 
-        for (int i = 0; i < vectorSumResult.getLength(); i++) {
+        for (int i = 0; i < length; i++) {
             vectorSumResult.vector[i] += vector2.vector[i];
         }
 
@@ -159,8 +162,9 @@ public class Vector {
 
     public static Vector getDifferent(Vector vector1, Vector vector2) {
         Vector vectorSumResult = new Vector(Math.max(vector1.n, vector2.n), vector1.vector);
+        int length = Math.max(vector1.n, vector2.n);
 
-        for (int i = 0; i < vectorSumResult.getLength(); i++) {
+        for (int i = 0; i < length; i++) {
             vectorSumResult.vector[i] -= vector2.vector[i];
         }
 
