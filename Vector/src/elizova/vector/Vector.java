@@ -148,23 +148,23 @@ public class Vector {
     }
 
     public static Vector getSum(Vector vector1, Vector vector2) {
-        Vector vectorSumResult = new Vector (Math.max(vector1.n, vector2.n), vector1.vector);
+        Vector vectorSumResult = new Vector(Math.max(vector1.n, vector2.n), vector1.vector);
 
         for (int i = 0; i < vectorSumResult.getLength(); i++) {
             vectorSumResult.vector[i] += vector2.vector[i];
         }
 
-        return  vectorSumResult;
+        return vectorSumResult;
     }
 
     public static Vector getDifferent(Vector vector1, Vector vector2) {
-        Vector vectorSumResult = new Vector (Math.max(vector1.n, vector2.n), vector1.vector);
+        Vector vectorSumResult = new Vector(Math.max(vector1.n, vector2.n), vector1.vector);
 
         for (int i = 0; i < vectorSumResult.getLength(); i++) {
             vectorSumResult.vector[i] -= vector2.vector[i];
         }
 
-        return  vectorSumResult;
+        return vectorSumResult;
     }
 
     public static Vector getMultiplicationResult(int scalar, Vector vector) {

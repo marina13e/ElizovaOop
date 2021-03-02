@@ -2,6 +2,8 @@ package elizova.vector_main;
 
 import elizova.vector.Vector;
 
+import java.util.Arrays;
+
 public class VectorMain {
     public static void main(String[] args) {
         try {
@@ -24,7 +26,9 @@ public class VectorMain {
 
         System.out.println("Sum = " + vector3.getSum(vector4));
         System.out.println("Different = " + vector3.getDifferent(vector4));
-        System.out.println("Multiplication Result = " + vector3.getMultiplicationResult(5));
+
+        vector3.getMultiplicationResult(5);
+        System.out.println("Multiplication Result = " + Arrays.toString(vector3.getVector()));
 
         System.out.println("Unfolded Vector 4 = " + vector4.unfoldVector());
         vector4.unfoldVector();
@@ -43,5 +47,6 @@ public class VectorMain {
 
         Vector vectorsMultiplicationResult = Vector.getMultiplicationResult(4, vectorsDifferent);
         System.out.println("Multiplication Result = " + vectorsMultiplicationResult);
+        System.out.println("Vector Size = " + vectorsMultiplicationResult.getN());
     }
 }
