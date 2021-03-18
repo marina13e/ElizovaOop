@@ -20,9 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="115fd861-99ee-47fe-bc3e-5306255b8256" name="Default Changelist" comment="Update Range, update RangeMain">
+      <change afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes_main/PerimeterComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/SortByArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes_main/AreaComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/SortByPerimeter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes_main/ShapesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes_main/ShapesMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.RangeMain">
+  <component name="RunManager" selected="Application.ShapesMain">
     <configuration name="RangeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="elizova.range_main.RangeMain" />
       <module name="Range" />
@@ -94,9 +100,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShapesMain" />
         <item itemvalue="Application.RangeMain" />
         <item itemvalue="Application.VectorMain" />
-        <item itemvalue="Application.ShapesMain" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614680895830</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update Range, RangeMain">
+      <created>1616058407729</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616058407729</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,10 +250,10 @@
     <MESSAGE value="Update Range, update RangeMain" />
     <MESSAGE value="Add classes Rectangle, Circle, Shape, ShapesMain, SortByArea, SortByPerimeter, Square, Triangle" />
     <MESSAGE value="Update classes Range, RangeMain" />
-    <MESSAGE value="Update Range, RangeMain" />
     <MESSAGE value="Add Vector, VectorMain" />
     <MESSAGE value="Update Vector, VectorMain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Vector, VectorMain" />
+    <MESSAGE value="Update Range, RangeMain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Range, RangeMain" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1614415999582">
@@ -255,46 +268,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="382" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1612340911893" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1614345426721">
+    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616059821000">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614345426721" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1615927410865">
+    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1616059821000" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1616060289425">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1615927410865">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1616060289425" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1615927410865">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1615927410865">
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1615927410865">
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1615927410865">
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1615927410865">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1615927410865">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1615927410865" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1614680903328">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1616060675186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614680903328" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1616060675186" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1616058429003">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1616058429003" />
     <state x="228" y="98" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1614667517422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -327,11 +344,6 @@
           <properties class="java.lang.NegativeArraySizeException" package="java.lang" />
           <option name="timeStamp" value="5" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Range/src/elizova/range/Range.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

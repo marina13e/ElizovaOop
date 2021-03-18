@@ -1,43 +1,43 @@
 package elizova.shapes;
 
 public class Square implements Shape {
-    private double side;
+    private double sideLength;
 
     public Square(double side) {
-        this.side = side;
+        this.sideLength = side;
     }
 
-    public double getSide() {
-        return side;
+    public double getSideLength() {
+        return sideLength;
     }
 
-    public void setSide(double side) {
-        this.side = side;
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
     }
 
     @Override
     public double getWidth() {
-        return side;
+        return sideLength;
     }
 
     @Override
     public double getHeight() {
-        return side;
+        return sideLength;
     }
 
     @Override
     public double getArea() {
-        return side * side;
+        return sideLength * sideLength;
     }
 
     @Override
     public double getPerimeter() {
-        return side * 4;
+        return sideLength * 4;
     }
 
     @Override
     public String toString() {
-        return "Квадрат со сторонами " + side;
+        return "Квадрат со сторонами " + sideLength;
     }
 
     @Override
@@ -51,14 +51,14 @@ public class Square implements Shape {
         }
 
         Square square = (Square) object;
-        return side == square.side;
+        return sideLength == square.sideLength;
     }
 
     @Override
     public int hashCode() {
         final int prime = 37;
         int hash = 1;
-        hash = prime * hash + Double.hashCode(side);
+        hash = prime * hash + Double.hashCode(sideLength);
         return hash;
     }
 }

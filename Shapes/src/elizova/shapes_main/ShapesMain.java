@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class ShapesMain {
     public static void main(String[] args) {
-        Shape triangle1 = new Triangle(1, 3, 2, 4, 6, 8);
+        Shape triangle1 = new Triangle(1, 7, 2, 4, 6, 8);
 
         double triangleWidth = triangle1.getWidth();
         double triangleHeight = triangle1.getHeight();
@@ -58,19 +58,22 @@ public class ShapesMain {
         double circleArea = circle1.getArea();
         System.out.println("Площадь круга = " + circleArea);
 
-        Shape square2 = new Square(8);
+        Shape[] shapes = {
+                square1,
+                new Square(8),
+                rectangle1,
+                new Rectangle(7, 12),
+                circle1,
+                triangle1
+        };
 
-        Shape rectangle2 = new Rectangle(7, 12);
+        Arrays.sort(shapes, new AreaComparator());
+        System.out.println("Фигура с наибольшей площадью: " + shapes[shapes.length - 1]);
 
-        Shape[] shapes = {square1, square2, rectangle1, rectangle2, circle1, triangle1};
+        Arrays.sort(shapes, new PerimeterComparator());
+        System.out.println("Фигура со вторым по величине периметром: " + shapes[shapes.length - 2]);
 
-        Arrays.sort(shapes, new SortByArea());
-        System.out.println("Фигура с наибольшей площадью: " + shapes[shapes.length - 1].toString());
-
-        Arrays.sort(shapes, new SortByPerimeter());
-        System.out.println("Фигура со вторым по величине периметром: " + shapes[1].toString());
-
-        boolean isSameSquares = square1.equals(square2);
+        boolean isSameSquares = square1.equals(new Square(9));
 
         if (isSameSquares) {
             System.out.println("Фигуры одинаковые");
