@@ -6,15 +6,12 @@ import java.util.Scanner;
 
 public class RangeMain {
     public static void main(String[] args) {
-        double from1 = 3.2;
-        double to1 = 6.2;
+        Range range1 = new Range(3.2, 6.2);
 
-        Range range1 = new Range(from1, to1);
+        System.out.println(range1);
 
-        System.out.println(range1.toString());
-
-        range1.setFrom(1.0);
-        range1.setTo(8.0);
+        range1.setFrom(5.0);
+        range1.setTo(7.0);
 
         System.out.printf("Значения from и to были изменены%nДиапазон начинается со значения %f%n" +
                 "Диапазон кончается значением %f%n", range1.getFrom(), range1.getTo());
@@ -35,10 +32,7 @@ public class RangeMain {
         double range1Length = range1.getLength();
         System.out.println("Длина диапазона = " + range1Length);
 
-        double from2 = 3.0;
-        double to2 = 6.0;
-
-        Range range2 = new Range(from2, to2);
+        Range range2 = new Range(1.0, 3.0);
 
         Range intersection = range1.getIntersection(range2);
         System.out.print("Результат поиска пересечения: ");
@@ -46,7 +40,7 @@ public class RangeMain {
         if (intersection == null) {
             System.out.println("Значение отсутствует");
         } else {
-            System.out.println(intersection.toString());
+            System.out.println(intersection);
         }
 
         Range[] union = range1.getUnion(range2);

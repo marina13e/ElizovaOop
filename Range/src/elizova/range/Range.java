@@ -9,10 +9,6 @@ public class Range {
         this.to = to;
     }
 
-    public double getLength() {
-        return to - from;
-    }
-
     public double getFrom() {
         return from;
     }
@@ -29,25 +25,29 @@ public class Range {
         this.to = to;
     }
 
+    public double getLength() {
+        return to - from;
+    }
+
     @Override
     public String toString() {
         return "(" + from + ", " + to + ")";
     }
 
     public static String getString(Range[] ranges) {
-        StringBuilder rangeArray = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
 
-        rangeArray.append("[");
+        stringBuilder.append("[");
 
         for (int i = 0; i < ranges.length - 1; i++) {
-            rangeArray.append(ranges[i].toString())
+            stringBuilder.append(ranges[i])
                     .append(", ");
         }
 
-        rangeArray.append(ranges[ranges.length - 1].toString())
+        stringBuilder.append(ranges[ranges.length - 1])
                 .append("]");
 
-        return rangeArray.toString();
+        return stringBuilder.toString();
     }
 
     public boolean isInside(double number) {
@@ -84,11 +84,19 @@ public class Range {
 
         Range range1 = new Range(from, range.from);
 
+        if (to < range.from) {
+            range1 = new Range(from, to);
+        }
+
         if (range.to > to) {
             return new Range[]{range1};
         }
 
         Range range2 = new Range(range.to, to);
+
+        if (range.to < from) {
+            range2 = new Range(from, to);
+        }
 
         if (from > range.from) {
             return new Range[]{range2};
