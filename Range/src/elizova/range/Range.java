@@ -35,6 +35,10 @@ public class Range {
     }
 
     public static String getString(Range[] ranges) {
+        if (ranges.length <= 0) {
+            return "Пустой массив";
+        }
+
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append("[");
