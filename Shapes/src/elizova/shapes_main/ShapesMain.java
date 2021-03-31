@@ -10,8 +10,7 @@ public class ShapesMain {
 
         double triangleWidth = triangle1.getWidth();
         double triangleHeight = triangle1.getHeight();
-        System.out.printf("Ширина треугольника = %f%nВысота треугольника = %f%n",
-                triangleWidth, triangleHeight);
+        System.out.printf("Ширина треугольника = %f%nВысота треугольника = %f%n", triangleWidth, triangleHeight);
 
         double trianglePerimeter = triangle1.getPerimeter();
         System.out.println("Периметр треугольника = " + trianglePerimeter);
@@ -23,8 +22,7 @@ public class ShapesMain {
 
         double squareWidth = square1.getWidth();
         double squareHeight = square1.getHeight();
-        System.out.printf("Ширина квадрата = %f%nВысота квадрата = %f%n",
-                squareWidth, squareHeight);
+        System.out.printf("Ширина квадрата = %f%nВысота квадрата = %f%n", squareWidth, squareHeight);
 
         double squarePerimeter = square1.getPerimeter();
         System.out.println("Периметр квадрата = " + squarePerimeter);
@@ -36,8 +34,7 @@ public class ShapesMain {
 
         double rectangleWidth = rectangle1.getWidth();
         double rectangleHeight = rectangle1.getHeight();
-        System.out.printf("Ширина прямоугольника = %f%nВысота прямоугольника = %f%n",
-                rectangleWidth, rectangleHeight);
+        System.out.printf("Ширина прямоугольника = %f%nВысота прямоугольника = %f%n", rectangleWidth, rectangleHeight);
 
         double rectanglePerimeter = rectangle1.getPerimeter();
         System.out.println("Периметр прямоугольника = " + rectanglePerimeter);
@@ -49,8 +46,7 @@ public class ShapesMain {
 
         double circleWidth = circle1.getWidth();
         double circleHeight = circle1.getHeight();
-        System.out.printf("Ширина круга = %f%nВысота круга = %f%n",
-                circleWidth, circleHeight);
+        System.out.printf("Ширина круга = %f%nВысота круга = %f%n", circleWidth, circleHeight);
 
         double circlePerimeter = circle1.getPerimeter();
         System.out.println("Периметр круга = " + circlePerimeter);

@@ -85,18 +85,18 @@ public class Triangle implements Shape {
         double sideLength2 = getSideLength(x1, y1, x3, y3);
         double sideLength3 = getSideLength(x2, y2, x3, y3);
 
-        double halfPerimeter = getPerimeter() / 2;
+        double halfPerimeter = (sideLength1 + sideLength2 + sideLength3) / 2;
 
         return Math.sqrt(halfPerimeter * (halfPerimeter - sideLength1) * (halfPerimeter - sideLength2) * (halfPerimeter - sideLength3));
     }
 
     @Override
     public double getPerimeter() {
-        double side1 = getSideLength(x1, y1, x2, y2);
-        double side2 = getSideLength(x1, y1, x3, y3);
-        double side3 = getSideLength(x2, y2, x3, y3);
+        double sideLength1 = getSideLength(x1, y1, x2, y2);
+        double sideLength2 = getSideLength(x1, y1, x3, y3);
+        double sideLength3 = getSideLength(x2, y2, x3, y3);
 
-        return side1 + side2 + side3;
+        return sideLength1 + sideLength2 + sideLength3;
     }
 
     @Override
@@ -116,6 +116,7 @@ public class Triangle implements Shape {
         }
 
         Triangle triangle = (Triangle) object;
+
         return x1 == triangle.x1 && y1 == triangle.y1 && x2 == triangle.x2 && y2 == triangle.y2
                 && x3 == triangle.x3 && y3 == triangle.y3;
     }
@@ -124,12 +125,16 @@ public class Triangle implements Shape {
     public int hashCode() {
         final int prime = 37;
         int hash = 1;
+
         hash = prime * hash + Double.hashCode(x1);
         hash = prime * hash + Double.hashCode(y1);
+
         hash = prime * hash + Double.hashCode(x2);
         hash = prime * hash + Double.hashCode(y2);
+
         hash = prime * hash + Double.hashCode(x3);
         hash = prime * hash + Double.hashCode(y3);
+
         return hash;
     }
 }
