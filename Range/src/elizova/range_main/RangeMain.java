@@ -10,8 +10,8 @@ public class RangeMain {
 
         System.out.println(range1);
 
-        range1.setFrom(5.0);
-        range1.setTo(7.0);
+        range1.setFrom(1.0);
+        range1.setTo(5.0);
 
         System.out.printf("Значения from и to были изменены%nДиапазон начинается со значения %f%n" +
                 "Диапазон кончается значением %f%n", range1.getFrom(), range1.getTo());

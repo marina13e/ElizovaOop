@@ -22,6 +22,8 @@
     <list default="true" id="115fd861-99ee-47fe-bc3e-5306255b8256" name="Default Changelist" comment="Update Range, update RangeMain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range/Range.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/elizova/range_main/RangeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/elizova/shapes/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.VectorMain">
+  <component name="RunManager" selected="Application.RangeMain">
     <configuration name="RangeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="elizova.range_main.RangeMain" />
       <module name="Range" />
@@ -93,9 +95,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RangeMain" />
         <item itemvalue="Application.VectorMain" />
         <item itemvalue="Application.ShapesMain" />
-        <item itemvalue="Application.RangeMain" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616592597289</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Update Range">
+      <created>1617021308920</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617021308920</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +270,8 @@
     <MESSAGE value="Update Range, RangeMain" />
     <MESSAGE value="Change names AreaComparator, PerimeterComparator, Update AreaComparator, Circle, PerimeterComparator, Rectangle, ShapesMain, Square, Triangle" />
     <MESSAGE value="Update Vector, VectorMain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Vector, VectorMain" />
+    <MESSAGE value="Update Range" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Range" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1614415999582">
@@ -284,22 +294,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1616060289425" />
-    <state width="1323" height="87" key="GridCell.Tab.0.bottom" timestamp="1616685421301">
+    <state width="1323" height="87" key="GridCell.Tab.0.bottom" timestamp="1617188557633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="87" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1616685421301" />
-    <state width="1323" height="87" key="GridCell.Tab.0.center" timestamp="1616685421301">
+    <state width="1323" height="87" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1617188557633" />
+    <state width="1323" height="87" key="GridCell.Tab.0.center" timestamp="1617188557632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="87" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1616685421301" />
-    <state width="1323" height="87" key="GridCell.Tab.0.left" timestamp="1616685421301">
+    <state width="1323" height="87" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1617188557632" />
+    <state width="1323" height="87" key="GridCell.Tab.0.left" timestamp="1617188557632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="87" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1616685421301" />
-    <state width="1323" height="87" key="GridCell.Tab.0.right" timestamp="1616685421301">
+    <state width="1323" height="87" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1617188557632" />
+    <state width="1323" height="87" key="GridCell.Tab.0.right" timestamp="1617188557632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="87" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1616685421301" />
+    <state width="1323" height="87" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1617188557632" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1616083310302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -316,10 +326,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1616083310302" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1616592604928">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1617021346757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1616592604928" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617021346757" />
     <state x="228" y="98" width="910" height="630" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1614667517422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

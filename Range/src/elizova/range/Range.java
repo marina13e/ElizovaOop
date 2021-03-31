@@ -67,7 +67,7 @@ public class Range {
     }
 
     public Range[] getUnion(Range range) {
-        if (from >= range.to || to <= range.from) {
+        if (from > range.to || to < range.from) {
             Range range1 = new Range(from, to);
             Range range2 = new Range(range.from, range.to);
 
@@ -92,7 +92,7 @@ public class Range {
             range1 = new Range(from, to);
         }
 
-        if (range.to > to) {
+        if (range.to >= to) {
             return new Range[]{range1};
         }
 
@@ -102,7 +102,7 @@ public class Range {
             range2 = new Range(from, to);
         }
 
-        if (from > range.from) {
+        if (from >= range.from) {
             return new Range[]{range2};
         }
 
